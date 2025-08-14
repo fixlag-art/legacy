@@ -34,12 +34,14 @@ legacy/
 │   │       └─ Google Mapsが読み込めない場合の代替画像（任意）。
 │   │
 │   ├─ osarizawa-mine/
-│   │   └─ heritage-map.png
-│   │       └─ 尾去沢鉱山のイラストや地図画像。
+│   │   ├─ heritage-map.png
+│   │   │   └─ 尾去沢鉱山のイラストや地図画像。
+│   │   └─ _picture.png` … 実際の写真をアップロードするまでの仮置きファイル（リマインド用）
 │   │
 │   └─ matsukawa-spring/
-│       └─ heritage-map.png
-│           └─ 松川地熱発電所のイラストや地図画像。
+│       │ heritage-map.png
+│       │   └─ 松川地熱発電所のイラストや地図画像。
+│       └─ _picture.png` … 実際の写真をアップロードするまでの仮置きファイル（リマインド用）
 │
 └─ sites/
 ├─ osarizawa-mine/
