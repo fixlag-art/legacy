@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "osarizawa-mine",
+    "name_ja": "尾去沢鉱山（秋田）",
+    "name_en": "Osarizawa Mine (Akita)",
+    "lat": 40.2376,
+    "lng": 140.8004,
+    "zoom": 12,
+    "thumb": "images/osarizawa-mine/heritage-map.png",
+    "path": "sites/osarizawa-mine/"
+  },
+  {
+    "slug": "matsukawa-spring",
+    "name_ja": "松川地熱発電所（岩手）",
+    "name_en": "Matsukawa Geothermal Power Plant (Iwate)",
+    "lat": 39.9759,
+    "lng": 141.0156,
+    "zoom": 12,
+    "thumb": "images/matsukawa-spring/heritage-map.png",
+    "path": "sites/matsukawa-spring/"
+  }
+]
