@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>天然資源と産業遺構 | Relic | FIXLAG.ART</title>
   <meta name="description" content="資源開発や産業遺構に関する資料・イラスト・研究メモを公開するアーカイブです。">
-  <!-- ルート絶対パスで共通CSSを読み込む（2カラムの核） -->
   <link rel="stylesheet" href="/assets/common.css">
   <style>
     .hero{margin:1rem 0;text-align:center}
@@ -15,7 +14,6 @@
 </head>
 <body>
 <div class="layout">
-  <!-- 左：共通サイドナビ（activeはJSが自動付与） -->
   <nav class="sidenav" aria-label="Global">
     <div class="logo">FIXLAG.ART</div>
     <a href="/">Index</a>
@@ -27,9 +25,7 @@
     <div class="sep"></div>
   </nav>
 
-  <!-- 右：本文 -->
   <main class="content">
-    <!-- 固定横帯：JSONから生成（Relic共通） -->
     <nav class="subnav" aria-label="Relic sections" data-base="/relic/"></nav>
     <script id="subnav-data" type="application/json">
     [
@@ -46,7 +42,6 @@
       </p>
 
       <figure class="hero">
-        <!-- ★ トップ専用フォルダの画像を “/relic/images/” から読む -->
         <img src="/relic/images/heritage-map.png" alt="天然資源と産業遺構のイラストマップ" width="1600" height="1067">
         <figcaption>Natural Resources × Industrial Heritages</figcaption>
       </figure>
@@ -63,7 +58,6 @@
   </main>
 </div>
 
-<!-- スクリプトは defer で順序固定：subnav → common -->
 <script src="/assets/subnav.js" defer></script>
 <script src="/assets/common.js" defer></script>
 </body>
