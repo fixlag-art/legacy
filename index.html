@@ -4,34 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>天然資源と産業遺構 | Relic | FIXLAG.ART</title>
-  <meta name="description" content="天然資源や産業遺構に関する資料・イラスト・研究メモを公開するアーカイブです。">
+  <meta name="description" content="資源開発や産業遺構に関する資料・イラスト・研究メモを公開するアーカイブです。">
+  <!-- ルート絶対パスで共通CSSを読み込む（2カラムの核） -->
   <link rel="stylesheet" href="/assets/common.css">
   <style>
-    .hero {
-      margin: 1rem 0;
-      text-align: center;
-    }
-    .hero img {
-      max-width: 100%;
-      height: auto;
-      border-radius: .6rem;
-      border: 1px solid var(--border);
-    }
-    .hero figcaption {
-      margin-top: .4rem;
-      font-size: .9rem;
-      color: var(--muted);
-    }
+    .hero{margin:1rem 0;text-align:center}
+    .hero img{max-width:100%;height:auto;border-radius:.6rem;border:1px solid var(--border)}
+    .hero figcaption{margin-top:.4rem;font-size:.9rem;color:var(--muted)}
   </style>
 </head>
 <body>
 <div class="layout">
-  <!-- 左：共通サイドナビ -->
+  <!-- 左：共通サイドナビ（activeはJSが自動付与） -->
   <nav class="sidenav" aria-label="Global">
     <div class="logo">FIXLAG.ART</div>
     <a href="/">Index</a>
     <a href="/sonic/">Sonic</a>
-    <a href="/relic/" class="active">Relic</a>
+    <a href="/relic/">Relic</a>
     <a href="/velox/">Velox</a>
     <a href="/gizmo/">Gizmo</a>
     <a href="/about/">About</a>
@@ -40,7 +29,7 @@
 
   <!-- 右：本文 -->
   <main class="content">
-    <!-- 固定帯（Relic用） -->
+    <!-- 固定横帯：JSONから生成（Relic共通） -->
     <nav class="subnav" aria-label="Relic sections" data-base="/relic/"></nav>
     <script id="subnav-data" type="application/json">
     [
@@ -53,12 +42,13 @@
     <article class="page">
       <h1>天然資源と産業遺構 <span class="badge">Relic</span></h1>
       <p class="lead">
-        本セクションは、天然資源や産業遺構に関する資料・イラスト・研究メモを保存・公開するアーカイブです。
+        本セクションは、資源開発や産業遺構に関する資料・イラスト・研究メモを保存・公開するアーカイブです。
       </p>
 
       <figure class="hero">
-        <img src="/images/heritage-map.png" alt="天然資源と産業遺構マップ" width="1600" height="1067">
-        <figcaption>Industrial Heritage × Energy History</figcaption>
+        <!-- ★ トップ専用フォルダの画像を “/relic/images/” から読む -->
+        <img src="/relic/images/heritage-map.png" alt="天然資源と産業遺構のイラストマップ" width="1600" height="1067">
+        <figcaption>Natural Resources × Industrial Heritages</figcaption>
       </figure>
 
       <section>
@@ -73,7 +63,7 @@
   </main>
 </div>
 
-<!-- 共通スクリプト -->
+<!-- スクリプトは defer で順序固定：subnav → common -->
 <script src="/assets/subnav.js" defer></script>
 <script src="/assets/common.js" defer></script>
 </body>
